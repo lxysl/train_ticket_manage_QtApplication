@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>subwindow</class>
+ <widget class="QWidget" name="subwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>722</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QGroupBox" name="passengerGroupBox">
+      <property name="title">
+       <string>乘客</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QGroupBox" name="currentAccount">
+         <property name="title">
+          <string>当前账号</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="nameLable">
+            <property name="text">
+             <string>姓名</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="nameShow">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="idLable">
+            <property name="text">
+             <string>身份证号</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLabel" name="idShow">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="passengerFunction">
+         <property name="title">
+          <string>操作</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="buy">
+            <property name="text">
+             <string>购票</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="refund">
+            <property name="text">
+             <string>退票</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="endorse">
+            <property name="text">
+             <string>改签</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="logout">
+            <property name="text">
+             <string>退出账户</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="buyPage">
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="1">
+            <widget class="QGroupBox" name="buyGroupBox">
+             <property name="title">
+              <string>购票</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <widget class="QLabel" name="startStationLable">
+                <property name="text">
+                 <string>始发站</string>
+                </property>
+                <property name="textFormat">
+                 <enum>Qt::AutoText</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4">
+               <widget class="QLabel" name="seatLabel">
+                <property name="text">
+                 <string>席别</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QComboBox" name="startProvince">
+                <item>
+                 <property name="text">
+                  <string>北京</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>河北</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="1" column="2" colspan="2">
+               <widget class="QComboBox" name="startCity"/>
+              </item>
+              <item row="1" column="4">
+               <widget class="QComboBox" name="seatComboBox">
+                <item>
+                 <property name="text">
+                  <string>硬座</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>卧铺</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>站票</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>动车</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="endLable">
+                <property name="text">
+                 <string>终点站</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="4">
+               <widget class="QLabel" name="numberLable">
+                <property name="text">
+                 <string>购票张数</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0" colspan="2">
+               <widget class="QComboBox" name="endProvince">
+                <item>
+                 <property name="text">
+                  <string>北京</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>河北</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="3" column="2" colspan="2">
+               <widget class="QComboBox" name="endCity"/>
+              </item>
+              <item row="3" column="4">
+               <widget class="QSpinBox" name="numberSpinBox"/>
+              </item>
+              <item row="4" column="0" colspan="5">
+               <widget class="QCalendarWidget" name="calendarWidget"/>
+              </item>
+              <item row="5" column="0">
+               <widget class="QPushButton" name="priceShowButton">
+                <property name="text">
+                 <string>显示价格</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="4">
+               <widget class="QPushButton" name="purchaseButton">
+                <property name="text">
+                 <string>购买</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1" colspan="3">
+               <widget class="QLabel" name="priceShowLable">
+                <property name="layoutDirection">
+                 <enum>Qt::LeftToRight</enum>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Plain</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>1</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>0</number>
+                </property>
+                <property name="text">
+                 <string>0￥</string>
+                </property>
+                <property name="textFormat">
+                 <enum>Qt::AutoText</enum>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="refundPage">
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="0" column="0">
+            <widget class="QGroupBox" name="refundGroupBox">
+             <property name="title">
+              <string>退票</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="0" column="0">
+               <widget class="QLabel" name="refundLabel">
+                <property name="text">
+                 <string>输入序号</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="refundLineEdit">
+                <property name="text">
+                 <string>0</string>
+                </property>
+                <property name="frame">
+                 <bool>true</bool>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QPushButton" name="refundButton">
+                <property name="text">
+                 <string>退票</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="endorsePage">
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="0" column="0">
+            <widget class="QGroupBox" name="groupBox">
+             <property name="title">
+              <string>改签</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_8">
+              <item row="0" column="0" colspan="2">
+               <widget class="QCalendarWidget" name="calendarWidget_2"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QPushButton" name="submitPushButton">
+                <property name="text">
+                 <string>提交</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QPushButton" name="CancelPushButton">
+                <property name="text">
+                 <string>放弃</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableView" name="tableView"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
